@@ -28,31 +28,43 @@ Test whether key clinical factors (e.g., tumour stage, receptor status) are stat
 - Loaded raw dataset into Python using **pandas**  
 - Normalized column names (removed spaces, replaced with underscores)  
 - Checked and handled missing values  
-- Converted categorical variables into consistent formats  
+- Converted categorical variables into consistent formats
+
+  ![](https://github.com/iqbal-hasan291/medical-data-hypothesis-testing/blob/8e1c864b3941982dfec82a5af30bb73e5ee932ba/image/Test1.png)
+
+  ![](https://github.com/iqbal-hasan291/medical-data-hypothesis-testing/blob/8e1c864b3941982dfec82a5af30bb73e5ee932ba/image/test2.png)
+
+### 3️ Visualization & Reporting  
+- Created grouped **bar charts** for Surgery Type by Tumour Stage
+![](https://github.com/iqbal-hasan291/medical-data-hypothesis-testing/blob/8e1c864b3941982dfec82a5af30bb73e5ee932ba/image/test1image.png)
+
+- Created grouped **pie charts** for HER2 Receptor Status by Patient Status
+![](https://github.com/iqbal-hasan291/medical-data-hypothesis-testing/blob/8e1c864b3941982dfec82a5af30bb73e5ee932ba/image/test2image.png)
+
+- Summarized **p-values** and statistical decisions in a results table  
 
 ### 2️ Hypothesis Testing (Google Colab)
 - Performed cross-tabulation and Chi-square tests to evaluate associations:  
-  - **Tumour Stage ↔ Surgery Type**  
-  - **HER2 Receptor Status ↔ Patient Status**  
-- Checked normality of numeric variables  
-- Applied appropriate statistical tests based on variable types (categorical vs. numerical)  
+  - **Tumour Stage ↔ Surgery Type**
+  ![](https://github.com/iqbal-hasan291/medical-data-hypothesis-testing/blob/c60727cd93726860ac3c2c9b56169d1c39e66a51/image/test1statement.png)
+  ![](https://github.com/iqbal-hasan291/medical-data-hypothesis-testing/blob/c60727cd93726860ac3c2c9b56169d1c39e66a51/image/test1result.png)
 
-### 3️ Visualization & Reporting  
-- Created grouped **bar charts** for Surgery Type by Tumour Stage  
-- Created grouped **pie charts** for HER2 Receptor Status by Patient Status  
-- Summarized **p-values** and statistical decisions in a results table  
+  - **HER2 Receptor Status ↔ Patient Status**
+  ![](https://github.com/iqbal-hasan291/medical-data-hypothesis-testing/blob/c60727cd93726860ac3c2c9b56169d1c39e66a51/image/test2statement.png)
+![](https://github.com/iqbal-hasan291/medical-data-hypothesis-testing/blob/c60727cd93726860ac3c2c9b56169d1c39e66a51/image/test2result.png)
+- Checked normality of numeric variables  
 
 ---
 
 ##  Key Findings  
 
 - **Tumour Stage and Surgery Type**  
-  - Chi-square test showed a statistically significant association (p < 0.05).  
+  - *Since the p-value < 0.05, we reject the null hypothesis (H₀). This indicates that surgical decisions are dependent on tumour stage.*
   - Later stages were more likely to undergo more radical surgery types.  
 
 - **HER2 Receptor Status and Patient Status**  
-  - Chi-square test also showed a significant association (p < 0.05).  
-  - Higher tumour stages corresponded to worse patient outcomes at last follow-up.  
+  - *Since the p-value > 0.05, we fail to reject the null hypothesis (H₀). This indicates that patient outcome is independent of HER2 receptor status in this dataset—there’s no                statistically significant relationship.* 
+  - Whether a patient’s tumour was HER2-positive or not didn’t show a clear link to how the patient did afterwards — outcomes were about the same either way in this dataset.
 
 ---
 
@@ -65,7 +77,7 @@ Test whether key clinical factors (e.g., tumour stage, receptor status) are stat
   Future datasets should include treatment follow-up times and additional biomarkers to strengthen survival analysis.  
 
 - **Statistical Approach:**  
-  Non-normal biomarker distributions suggest using non-parametric or transformed data for more accurate inference.  
+  This analysis shows how simple statistical tests can reveal where medical decisions already align with clinical factors (like stage) and where relationships are unclear (like HER2        status).
 
 ---  
 
