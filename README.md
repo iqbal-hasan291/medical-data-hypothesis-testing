@@ -1,7 +1,6 @@
 #  Medical Data Hypothesis Testing  
 
-A statistical analysis project applying hypothesis testing to a real-world breast cancer dataset.  
-This repository demonstrates how hypothesis testing can be used to uncover relationships between key clinical factors, treatment decisions, and patient outcomes.
+A statistical analysis project applying hypothesis testing to a real-world breast cancer dataset. This repository demonstrates how hypothesis testing can be used to uncover relationships between key clinical factors, treatment decisions, and patient outcomes.
 
 ---
 
@@ -9,13 +8,7 @@ This repository demonstrates how hypothesis testing can be used to uncover relat
 This project applies **statistical hypothesis testing** to a medical dataset of breast cancer patients.  
 The dataset includes:  
 
-- Patient Age  
-- Histology  
-- Biomarker levels  
-- Tumour stages  
-- Receptor statuses (HER2, etc.)  
-- Surgical treatments  
-- Patient Status  
+- Patient Age  - Histology  - Biomarker levels  - Tumour stages  - Receptor statuses (HER2, etc.)  - Surgical treatments  - Patient Status  
 
 **Goal:**  
 Test whether key clinical factors (e.g., tumour stage, receptor status) are statistically associated with treatment decisions and patient outcomes.
